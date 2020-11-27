@@ -30,17 +30,17 @@ function App() {
   return (
     <>
       <div className={classes.root}>
-        <Container maxWidth="lg">
           <AppBar position="sticky" color="inherit" className={classes.menu}>
-            <Toolbar>
-              <Typography variant="h6" className={classes.title}>
-                <div className="title-logo"><span className="logo-text">A</span></div>
-              </Typography>
-              <Button color="inherit">Home</Button>
-              <Button color="inherit">Projects</Button>
-            </Toolbar>
+            <Container maxWidth="lg">
+              <Toolbar>
+                <Typography variant="h6" className={classes.title}>
+                  <div className="title-logo"><span className="logo-text">A</span></div>
+                </Typography>
+                <Button color="inherit">Home</Button>
+                <Button color="inherit">Projects</Button>
+              </Toolbar>
+            </Container>
           </AppBar>
-        </Container>
         <Container maxWidth="md">
           <Typography component="div">
             <h1>Hello, my name is Alex.<br/>I am a Full Stack Developer living in Mexico City, MX.</h1>
