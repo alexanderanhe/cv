@@ -47,8 +47,8 @@ export const data = {
         "uri": "https://via.placeholder.com/150",
         "title": "Tic Tac Toe Socket.io" 
       }],
-      "desc": "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
-      "more": "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+      "desc": "Tic Tac Toe game in which you can play with your friends",
+      "more": "Tic Tac Toe game in which you can play with your friends",
       "git": "//"
   }],
   "skills": [{
