@@ -9,7 +9,7 @@ import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import PageviewIcon from '@material-ui/icons/Pageview';
+import LinkIcon from '@material-ui/icons/Link';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Grid from '@material-ui/core/Grid';
 
@@ -86,8 +86,8 @@ export default function Projects({ data }) {
                       <IconButton aria-label="Github" href={ e.git } target="_blank" rel="noreferrer">
                         <GitHubIcon />
                       </IconButton>
-                      <IconButton aria-label="Go">
-                        <PageviewIcon />
+                      <IconButton aria-label="Go" href={ e.uri } target="_blank" rel="noreferrer">
+                        <LinkIcon />
                       </IconButton>
                     </CardActions>
                   </Card>

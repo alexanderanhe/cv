@@ -6,35 +6,35 @@ export const data = {
   "experiences": [{
       "title": "Full Stack Engineer",
       "job": "QUANTUM",
-      "type": " · Profesional independiente",
+      "type": " · quantummx.com",
       "period": "nov. 2018 - present · 2 years and 3 months",
       "address": "Rio Magdalena 326, Loreto",
       "description": ""
   }, {
     "title": "Web Developer Jr",
     "job": "KICHINK",
-    "type": "",
+    "type": " · kichink.com",
     "period": "mar. 2018 - nov. 2018 · 9 months",
-    "address": "",
+    "address": "Av Sonora 113, 501, Roma Nte",
     "description": ""
 }, {
   "title": "Web Developer",
   "job": "Curiosity Media Club",
-  "type": "",
+  "type": " · curiosity.media",
   "period": "jun. 2017 - mar. 2018 · 10 months",
-  "address": "",
+  "address": "Blvd. Manuel Ávila Camacho 66, Virreyes, Lomas de Chapultepec",
   "description": ""
 }, {
   "title": "Web Developer",
   "job": "Pauta Creativa",
-  "type": "",
+  "type": " · pautacreativa.com.mx",
   "period": "mar. 2016 - may. 2017 · 1 year and 3 months",
   "address": "",
   "description": ""
 }, {
   "title": "Jr Programmer",
   "job": "VCIP Soluciones",
-  "type": "",
+  "type": " · vcip.center",
   "period": "jun. 2013 - mar. 2016 · 2 years and 10 months",
   "address": "",
   "description": ""
@@ -42,14 +42,15 @@ export const data = {
   "projects": [{
       "type": "G",
       "title": "Tic Tac Toe Socket.io",
-      "subtitle": "JUN 2020",
+      "subtitle": "jun. 2020",
       "thumb": [{
-        "uri": "https://via.placeholder.com/150",
+        "uri": "//placeimg.com/300/300/tech",
         "title": "Tic Tac Toe Socket.io" 
       }],
-      "desc": "Tic Tac Toe game in which you can play with your friends",
+      "desc": "Tic Tac Toe game in which you can play with your friends.",
       "more": "Tic Tac Toe game in which you can play with your friends",
-      "git": "//"
+      "git": "//github.com/alexanderanhe/react-tictactoe-client",
+      "uri": "//reactapp-tictactoe-client.herokuapp.com/"
   }],
   "skills": [{
       "title": "Data Structures and Algorithms",
