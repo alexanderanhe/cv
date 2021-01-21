@@ -26,3 +26,19 @@
   transform: rotate(90deg);
   transform-origin: center
 }
+
+section {
+  margin-bottom: 50px; 
+}
+
+section.home h1 {
+  font-size: 2em;
+}
+
+section.about p {
+  line-height: 1.8;
+}
+
+section.skills {
+  margin-bottom: 120px;
+}
