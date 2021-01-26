@@ -71,6 +71,8 @@ export default function ContactDialog({ open, handleClose, sendEmail }) {
                 id="message"
                 value={values.amount}
                 onChange={handleChange('message')}
+                multiline
+                rows={6}
                 labelWidth={60}
               />
             </FormControl>
