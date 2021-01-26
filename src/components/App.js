@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { data } from "../Data";
+import { db } from '../firebase'
 
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography, Button, Container } from '@material-ui/core';
@@ -8,6 +9,9 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 import Home from './Home'
 import About from './About'
 import Experience from './Experience'
@@ -16,7 +20,6 @@ import Skills from './Skills'
 import ContactDialog from './ContactDialog'
 
 // import TemporaryDrawer from '../examples/TemporaryDrawer'
-// import SimpleBackdrop from '../examples/SimpleBackdrop'
 // import CustomizedTimeline from '../examples/CustomizedTimeline'
 
 function Alert(props) {
@@ -26,6 +29,10 @@ function Alert(props) {
 const useStyles = makeStyles((theme) => ({
   root: {
     
+  },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
   },
   menu: {
     boxShadow: 'none',
@@ -44,8 +51,9 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-  const [opensnackbars, setOpensnackbars] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [opensnackbars, setOpensnackbars] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleCloseSnackbars = (event, reason) => {
     if (reason === 'clickaway') {
@@ -63,10 +71,17 @@ function App() {
     setOpen(false);
   };
 
-  const sendEmail = ({ name, email, message }) => {
-    console.log({ name, email, message })
+  const sendEmail = async (contactData) => {
     handleClose()
-    setOpensnackbars(true)
+    setLoading(true)
+    let contactInfo = db.ref('contact').push()
+    await contactInfo.set(contactData).then(() => {
+      setLoading(false)
+      setOpensnackbars(true)
+    })
+    .catch(error => {
+        console.error("Error writing document: ", error);
+    });
   }
 
   return (
@@ -96,7 +111,6 @@ function App() {
             <Skills data={ data.skills }/>
 
             {/* <TemporaryDrawer/>
-            <SimpleBackdrop/>
             <CustomizedTimeline/> */}
 
             <ContactDialog open={ open } handleClose={ handleClose } sendEmail={ sendEmail } />
@@ -105,6 +119,9 @@ function App() {
                 Your message has been sent!
               </Alert>
             </Snackbar>
+            <Backdrop className={classes.backdrop} open={loading}>
+              <CircularProgress color="inherit" />
+            </Backdrop>
           </Container>
           
       </div>

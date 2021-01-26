@@ -35,19 +35,18 @@ export default function Experience({ data }) {
                 <ListItem>
                   <ListItemText primary={ <strong>{ e.title }</strong> } secondary={
                     <React.Fragment>
-                      <div>
-                        <Typography
-                          component="span"
-                          variant="body2"
-                          className={classes.inline}
-                          color="textPrimary"
-                        >
-                          { e.job }
-                        </Typography>
-                        { e.type }
-                      </div>
-                      <div>{ e.period }</div>
-                      <div>{ e.address }</div>
+                      <Typography
+                        component="span"
+                        variant="body2"
+                        className={classes.inline}
+                        color="textPrimary"
+                      >
+                        { e.job }
+                      </Typography>
+                      { e.type }
+                      
+                      <span style={{ display: 'block' }}>{ e.period }</span>
+                      <span style={{ display: 'block' }}>{ e.address }</span>
                       <Typography
                           component="span"
                           variant="body2"
