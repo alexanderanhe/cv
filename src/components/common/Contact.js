@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ContactDialog({ open, handleClose, sendEmail }) {
+export default function Contact({ open, handleClose, sendEmail }) {
   const classes = useStyles();
   const [values, setValues] = useState({
     name: '',

@@ -2,25 +2,23 @@ import React, { useState } from 'react';
 import './App.css';
 import { data } from "../Data";
 import { db } from '../firebase'
-import {ReactComponent as ReactLogo } from '../logo.svg'
 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography, Button, Container } from '@material-ui/core';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import { Container } from '@material-ui/core';
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import Backdrop from '@material-ui/core/Backdrop';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-import Home from './Home'
-import About from './About'
+import Navbar from './common/Navbar'
+import Home from './home/Home'
 import Experience from './Experience'
-import Projects from './Projects'
+import Projects from './projects/Projects'
+import ProjectDetail from './projects/Detail'
 import Skills from './Skills'
-import ContactDialog from './ContactDialog'
-
-import TemporaryDrawer from '../examples/TemporaryDrawer'
+import Contact from './common/Contact'
+import Footer from './common/Footer'
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -28,24 +26,16 @@ function Alert(props) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
   },
   backdrop: {
     zIndex: theme.zIndex.drawer + 1,
     color: '#fff',
   },
-  menu: {
-    boxShadow: 'none',
-    paddingTop: '1.3em',
-    paddingBottom: '1.3em',
-    background: "linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 71%, rgba(255,255,255,0.3) 100%)",
-    filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 )",
-  },
   menuButton: {
     marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
   },
 }));
 
@@ -87,34 +77,28 @@ function App() {
   return (
     <>
       <div className={classes.root}>
-          <AppBar position="sticky" color="inherit" className={classes.menu}>
-            <Container maxWidth="lg">
-              <Toolbar>
-                <Typography variant="h6" className={classes.title}>
-                  <div className="title-logo"><span className="logo-text">
-                    <ReactLogo style={{ width: '100%', height: '100%' }}/>
-                  </span></div>
-                </Typography>
-                <Button color="inherit" onClick={handleClickOpen}>Contact</Button>
-                <Button href={ data.principal.linkedin } target="_blank" color="inherit">
-                  <LinkedInIcon/>
-                </Button>
-                <Button  color="inherit" href={ data.principal.github } target="_blank" rel="noreferrer">
-                  <GitHubIcon/>
-                </Button>
-              </Toolbar>
-            </Container>
-          </AppBar>
+        <Router>
+          <Navbar data={ data.principal } handleClickOpen={ handleClickOpen }/>
           <Container maxWidth="md">
-            <Home/>
-            <About data={ data.principal }/>
-            <Experience data={ data.experiences }/>
-            <Projects data={ data.projects }/>
-            <Skills data={ data.skills }/>
+            <Switch>
+              <Route exact path="/">
+                <Home data={ data.principal }/>
+              </Route>
+              <Route path="/experience">
+                <Experience data={ data.experiences }/>
+              </Route>
+              <Route path="/projects" exact>
+                <Projects data={ data.projects }/>
+              </Route>
+              <Route path="/project/:id">
+                <ProjectDetail data={ data.projects }/>
+              </Route>
+              <Route path="/skills">
+                <Skills data={ data.skills }/>
+              </Route>
+            </Switch>
 
-            <TemporaryDrawer/>
-
-            <ContactDialog open={ open } handleClose={ handleClose } sendEmail={ sendEmail } />
+            <Contact open={ open } handleClose={ handleClose } sendEmail={ sendEmail } />
             <Snackbar open={opensnackbars} autoHideDuration={6000} onClose={handleCloseSnackbars}>
               <Alert onClose={handleCloseSnackbars} severity="success">
                 Your message has been sent!
@@ -124,7 +108,8 @@ function App() {
               <CircularProgress color="inherit" />
             </Backdrop>
           </Container>
-          
+          <Footer/>
+        </Router>
       </div>
     </>
   );

@@ -40,10 +40,14 @@ export const data = {
   "description": ""
 }],
   "projects": [{
+      "slug": "tic-tac-toe-fractal-socketio",
       "type": "G",
       "title": "Tic Tac Toe Socket.io",
       "subtitle": "jun. 2020",
       "thumb": [{
+        "uri": "//placeimg.com/300/300/tech",
+        "title": "Tic Tac Toe Socket.io" 
+      }, {
         "uri": "//placeimg.com/300/300/tech",
         "title": "Tic Tac Toe Socket.io" 
       }],
