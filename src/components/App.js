@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { data } from "../Data";
 import { db } from '../firebase'
+import {ReactComponent as ReactLogo } from '../logo.svg'
 
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography, Button, Container } from '@material-ui/core';
@@ -19,8 +20,7 @@ import Projects from './Projects'
 import Skills from './Skills'
 import ContactDialog from './ContactDialog'
 
-// import TemporaryDrawer from '../examples/TemporaryDrawer'
-// import CustomizedTimeline from '../examples/CustomizedTimeline'
+import TemporaryDrawer from '../examples/TemporaryDrawer'
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -91,9 +91,11 @@ function App() {
             <Container maxWidth="lg">
               <Toolbar>
                 <Typography variant="h6" className={classes.title}>
-                  <div className="title-logo"><span className="logo-text">A</span></div>
+                  <div className="title-logo"><span className="logo-text">
+                    <ReactLogo style={{ width: '100%', height: '100%' }}/>
+                  </span></div>
                 </Typography>
-                <Button color="inherit" onClick={handleClickOpen}>Contact me</Button>
+                <Button color="inherit" onClick={handleClickOpen}>Contact</Button>
                 <Button href={ data.principal.linkedin } target="_blank" color="inherit">
                   <LinkedInIcon/>
                 </Button>
@@ -110,8 +112,7 @@ function App() {
             <Projects data={ data.projects }/>
             <Skills data={ data.skills }/>
 
-            {/* <TemporaryDrawer/>
-            <CustomizedTimeline/> */}
+            <TemporaryDrawer/>
 
             <ContactDialog open={ open } handleClose={ handleClose } sendEmail={ sendEmail } />
             <Snackbar open={opensnackbars} autoHideDuration={6000} onClose={handleCloseSnackbars}>

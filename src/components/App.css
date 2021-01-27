@@ -13,7 +13,8 @@
   transform: rotate(0deg);
   transition: transform .4s ease-in-out;
   font-weight: 500;
-  font-size: 1.25rem
+  font-size: 1.25rem;
+  padding: 9px;
 }
 
 .title-logo:hover {
