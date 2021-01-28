@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <footer className={classes.footer}>
       <Container maxWidth="sm">
-        <Typography variant="body1">It's always been done this way.</Typography>
+        <Typography variant="body1">"Creativity is Intelligence Having Fun!"​ - Albert Einstein.</Typography>
         <Copyright />
       </Container>
     </footer>

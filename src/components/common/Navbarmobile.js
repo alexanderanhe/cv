@@ -11,6 +11,11 @@ import ListItemText from '@material-ui/core/ListItemText';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MenuIcon from '@material-ui/icons/Menu';
+import PersonIcon from '@material-ui/icons/Person';
+import WorkIcon from '@material-ui/icons/Work';
+import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 
 const useStyles = makeStyles({
   list: {
@@ -41,25 +46,40 @@ export default function Navbarmobile({ data, handleClickOpen }) {
         <Link to="/" style={{ color: 'inherit'}}>
           <ListItem button key="home">
             <ListItemText primary="About" />
+            <ListItemIcon>
+              <PersonIcon/>
+            </ListItemIcon>
           </ListItem>
         </Link>
         <Link to="/experience" style={{ color: 'inherit'}}>
           <ListItem button key="experience">
             <ListItemText primary="Experience" />
+            <ListItemIcon>
+              <WorkIcon/>
+            </ListItemIcon>
           </ListItem>
         </Link>
         <Link to="/projects" style={{ color: 'inherit'}}>
           <ListItem button key="projects">
             <ListItemText primary="Projects" />
+            <ListItemIcon>
+              <DeveloperModeIcon/>
+            </ListItemIcon>
           </ListItem>
         </Link>
         <Link to="/skills" style={{ color: 'inherit'}}>
           <ListItem button key="skills">
             <ListItemText primary="Skills" />
+            <ListItemIcon>
+              <AssignmentIcon/>
+            </ListItemIcon>
           </ListItem>
         </Link>
         <ListItem button key="contact" onClick={handleClickOpen}>
           <ListItemText primary="Contact" />
+          <ListItemIcon>
+            <ContactPhoneIcon/>
+          </ListItemIcon>
         </ListItem>
       </List>
       <Divider />

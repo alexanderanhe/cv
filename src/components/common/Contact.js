@@ -63,6 +63,7 @@ export default function Contact({ open, handleClose, sendEmail }) {
                 value={values.amount}
                 onChange={handleChange('email')}
                 labelWidth={60}
+                type="email"
               />
             </FormControl>
             <FormControl fullWidth className={classes.margin} variant="outlined">
