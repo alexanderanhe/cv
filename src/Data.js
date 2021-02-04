@@ -45,10 +45,7 @@ export const data = {
       "title": "Tic Tac Toe Socket.io",
       "subtitle": "jun. 2020",
       "thumb": [{
-        "uri": "//placeimg.com/300/300/tech",
-        "title": "Tic Tac Toe Socket.io" 
-      }, {
-        "uri": "//placeimg.com/300/300/tech",
+        "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/project_tictactoe.jpg?alt=media&token=1592aca0-d2d5-4f53-9535-8a8dbcbcc4b4",
         "title": "Tic Tac Toe Socket.io" 
       }],
       "desc": "Tic Tac Toe game in which you can play with your friends.",
