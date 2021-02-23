@@ -52,6 +52,19 @@ export const data = {
       "more": "Tic Tac Toe game in which you can play with your friends",
       "git": "//github.com/alexanderanhe/react-tictactoe-client",
       "uri": "//reactapp-tictactoe-client.herokuapp.com/"
+  }, {
+    "slug": "angular-9-CRUD",
+    "type": "A",
+    "title": "Angular 9 CRUD (Create, Read, Update, Delete)",
+    "subtitle": "feb. 2021",
+    "thumb": [{
+      "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/crud_angular9_nodejs.jpg?alt=media&token=95998d98-26a3-47d4-8a1a-13045cab40d6",
+      "title": "Angular 9 CRUD (Create, Read, Update, Delete)" 
+    }],
+    "desc": "NodeJs and MySQL",
+    "more": "CRUD application developed with Angular version 9, this application has a REST API developed in NodeJs and MySQL database.",
+    "git": "//github.com/alexanderanhe/telynet_api",
+    "uri": "//telynet.herokuapp.com/"
   }],
   "skills": [{
       "title": "Data Structures and Algorithms",
