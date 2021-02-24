@@ -55,16 +55,29 @@ export const data = {
   }, {
     "slug": "angular-9-CRUD",
     "type": "A",
-    "title": "Angular 9 CRUD (Create, Read, Update, Delete)",
+    "title": "Angular 9 CRUD",
     "subtitle": "feb. 2021",
     "thumb": [{
       "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/crud_angular9_nodejs.jpg?alt=media&token=95998d98-26a3-47d4-8a1a-13045cab40d6",
       "title": "Angular 9 CRUD (Create, Read, Update, Delete)" 
     }],
-    "desc": "NodeJs and MySQL",
+    "desc": "Angular 9 CRUD App (Create, Read, Update, Delete), using AngularMaterial, NodeJs and MySQL",
     "more": "CRUD application developed with Angular version 9, this application has a REST API developed in NodeJs and MySQL database.",
     "git": "//github.com/alexanderanhe/telynet_api",
     "uri": "//telynet.herokuapp.com/"
+  }, {
+    "slug": "react-maintenance-cars",
+    "type": "A",
+    "title": "Small React App",
+    "subtitle": "feb. 2021",
+    "thumb": [{
+      "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/ecb_app%2Fecb_reac_app.jpg?alt=media&token=d88d560e-5fa0-40e9-9061-c65d7131c57c",
+      "title": "Small React App" 
+    }],
+    "desc": "React, Bootstrap, NodeJs",
+    "more": "Test prototype application",
+    "git": "//github.com/alexanderanhe/ecb_app",
+    "uri": "//ecb-app.herokuapp.com/"
   }],
   "skills": [{
       "title": "Data Structures and Algorithms",
