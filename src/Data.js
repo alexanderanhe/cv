@@ -76,7 +76,7 @@ export const data = {
     }],
     "desc": "React, Bootstrap, NodeJs",
     "more": "Test prototype application",
-    "git": "//github.com/alexanderanhe/ecb_app",
+    "git": "//github.com/alexanderanhe/ecb-app",
     "uri": "//ecb-app.herokuapp.com/"
   }],
   "skills": [{
