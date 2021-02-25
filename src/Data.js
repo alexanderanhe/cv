@@ -80,7 +80,7 @@ export const data = {
       "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/ecb_app%2Fecb_reac_app.jpg?alt=media&token=d88d560e-5fa0-40e9-9061-c65d7131c57c",
       "title": "Small React App" 
     }],
-    "desc": "React, Bootstrap, NodeJs",
+    "desc": "Simple test prototype application. React, Bootstrap, NodeJs",
     "more": "Test prototype application",
     "git": "//github.com/alexanderanhe/ecb-app",
     "uri": "//ecb-app.herokuapp.com/"
