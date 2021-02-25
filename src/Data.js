@@ -61,7 +61,7 @@ export const data = {
       "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/project_qrwifi_1.jpg?alt=media&token=98c7fc3f-a7e3-4554-aa5f-950739927482",
       "title": "QR view" 
     }, {
-      "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/project_qrwifi_2.jpg?alt=media&token=a59988a9-6011-477b-bbbc-5de2a3991791",
+      "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/project_qrwifi_2.jpg?alt=media&token=abb257d9-4045-45d2-815a-6540c81b6d9e",
       "title": "Create a new network" 
     }, {
       "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/project_qrwifi_3.jpg?alt=media&token=b7e2e6ac-f607-4fe6-a4ad-be35f1e7f312",
