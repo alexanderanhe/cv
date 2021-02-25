@@ -53,18 +53,24 @@ export const data = {
       "git": "//github.com/alexanderanhe/react-tictactoe-client",
       "uri": "//reactapp-tictactoe-client.herokuapp.com/"
   }, {
-    "slug": "angular-9-CRUD",
+    "slug": "qrwifi",
     "type": "A",
-    "title": "Angular 9 CRUD",
+    "title": "Wifi QR",
     "subtitle": "feb. 2021",
     "thumb": [{
-      "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/crud_angular9_nodejs.jpg?alt=media&token=95998d98-26a3-47d4-8a1a-13045cab40d6",
-      "title": "Angular 9 CRUD (Create, Read, Update, Delete)" 
+      "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/project_qrwifi_1.jpg?alt=media&token=98c7fc3f-a7e3-4554-aa5f-950739927482",
+      "title": "QR view" 
+    }, {
+      "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/project_qrwifi_2.jpg?alt=media&token=a59988a9-6011-477b-bbbc-5de2a3991791",
+      "title": "Create a new network" 
+    }, {
+      "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/project_qrwifi_3.jpg?alt=media&token=b7e2e6ac-f607-4fe6-a4ad-be35f1e7f312",
+      "title": "Network saved list" 
     }],
-    "desc": "Angular 9 CRUD App (Create, Read, Update, Delete), using AngularMaterial, NodeJs and MySQL",
-    "more": "CRUD application developed with Angular version 9, this application has a REST API developed in NodeJs and MySQL database.",
-    "git": "//github.com/alexanderanhe/telynet_api",
-    "uri": "//telynet.herokuapp.com/"
+    "desc": "React and Bootstrap. Save your WiFi Settings to share easier.",
+    "more": "Save your WiFi Settings to share easier",
+    "git": "//github.com/alexanderanhe/qrwifi",
+    "uri": "//qrwifi-app.herokuapp.com/"
   }, {
     "slug": "react-maintenance-cars",
     "type": "A",
@@ -78,6 +84,19 @@ export const data = {
     "more": "Test prototype application",
     "git": "//github.com/alexanderanhe/ecb-app",
     "uri": "//ecb-app.herokuapp.com/"
+  }, {
+    "slug": "angular-9-CRUD",
+    "type": "A",
+    "title": "Angular 9 CRUD",
+    "subtitle": "feb. 2021",
+    "thumb": [{
+      "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/crud_angular9_nodejs.jpg?alt=media&token=95998d98-26a3-47d4-8a1a-13045cab40d6",
+      "title": "Angular 9 CRUD (Create, Read, Update, Delete)" 
+    }],
+    "desc": "Angular 9 CRUD App (Create, Read, Update, Delete), using AngularMaterial, NodeJs and MySQL",
+    "more": "CRUD application developed with Angular version 9, this application has a REST API developed in NodeJs and MySQL database.",
+    "git": "//github.com/alexanderanhe/telynet_api",
+    "uri": "//telynet.herokuapp.com/"
   }],
   "skills": [{
       "title": "Data Structures and Algorithms",
