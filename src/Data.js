@@ -93,8 +93,8 @@ export const data = {
       "uri": "https://firebasestorage.googleapis.com/v0/b/alex-angulo-me.appspot.com/o/crud_angular9_nodejs.jpg?alt=media&token=95998d98-26a3-47d4-8a1a-13045cab40d6",
       "title": "Angular 9 CRUD (Create, Read, Update, Delete)" 
     }],
-    "desc": "Angular 9 CRUD App (Create, Read, Update, Delete), using AngularMaterial, NodeJs and MySQL",
-    "more": "CRUD application developed with Angular version 9, this application has a REST API developed in NodeJs and MySQL database.",
+    "desc": "Angular 9 CRUD App, using AngularMaterial, NodeJs and MySQL",
+    "more": "CRUD application (Create, Read, Update, Delete) developed with Angular version 9, this application has a REST API developed in NodeJs and MySQL database.",
     "git": "//github.com/alexanderanhe/telynet_api",
     "uri": "//telynet.herokuapp.com/"
   }],
