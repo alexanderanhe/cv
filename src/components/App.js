@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import HttpsRedirect from 'react-https-redirect';
 import './App.css';
 import { data } from "../Data";
 import { db } from '../firebase'
@@ -75,7 +76,7 @@ function App() {
   }
 
   return (
-    <>
+    <HttpsRedirect>
       <div className={classes.root}>
         <Router>
           <Navbar data={ data.principal } handleClickOpen={ handleClickOpen }/>
@@ -111,7 +112,7 @@ function App() {
           <Footer/>
         </Router>
       </div>
-    </>
+    </HttpsRedirect>
   );
 }
 
