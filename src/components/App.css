@@ -43,3 +43,22 @@ section.about p {
 section.skills {
   margin-bottom: 120px;
 }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.game-image {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  animation: App-logo-spin infinite 20s linear;
+  -webkit-animation: App-logo-spin infinite 20s linear;
+  -moz-animation: App-logo-spin infinite 20s linear;
+}

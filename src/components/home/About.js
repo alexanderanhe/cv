@@ -1,5 +1,6 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
+import gameImage from '../../pngegg.png';
 
 export default function About({ data }) {
   return (
@@ -11,6 +12,9 @@ export default function About({ data }) {
           planning for requirements gathering through writing and testing code, creating documentation and support.
           See my previous work history on <a href={ data.linkedin } target="_blank" rel="noreferrer">LinkedIn</a>.</p>
       </Typography>
+      <div className="game-image" style={{backgroundImage: `url(${gameImage})`}}>
+
+      </div>
     </section>
   )
 }
