@@ -54,11 +54,11 @@ section.skills {
 }
 
 .game-image {
-  background-size: auto 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 50vh;
-  animation: App-logo-spin infinite 20s linear;
-  -webkit-animation: App-logo-spin infinite 20s linear;
-  -moz-animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 512s linear;
+  -webkit-animation: App-logo-spin infinite 512s linear;
+  -moz-animation: App-logo-spin infinite 512s linear;
 }
