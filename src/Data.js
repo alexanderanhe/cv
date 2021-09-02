@@ -4,13 +4,20 @@ export const data = {
     "github": "//github.com/alexanderanhe",
   },
   "experiences": [{
-      "title": "Full Stack Engineer",
-      "job": "QUANTUM",
-      "type": " · quantummx.com",
-      "period": "nov. 2018 - present · 2 years and 3 months",
-      "address": "Rio Magdalena 326, Loreto",
+      "title": "Software Developer Technical Lead",
+      "job": "Platimex",
+      "type": " · platimex.com.mx",
+      "period": "mar. 2021 - present · 6 months",
+      "address": "",
       "description": ""
   }, {
+    "title": "Full Stack Engineer",
+    "job": "QUANTUM",
+    "type": " · quantummx.com",
+    "period": "nov. 2018 - present · 2 years and 11 months",
+    "address": "Rio Magdalena 326, Loreto",
+    "description": ""
+}, {
     "title": "Web Developer Jr",
     "job": "KICHINK",
     "type": " · kichink.com",
